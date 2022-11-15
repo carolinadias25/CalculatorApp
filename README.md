@@ -11,6 +11,16 @@ if I do them from scratch, using my own code, and be able to demonstrate a few o
 state management, and breaking down code into components. It might seem simple at first, but there are quite a few tricks we have to take into account. 
 For example, the fact that I added a formatOperand() function that helps us format the current number using decimal and integer formatted.
 
+I made 3 separate components App.js (parent) DigitButton.js and OperationButton.js (children) because it organises the code in a better way.
+To save the state that includes currentOperand, previousOperand, operation, I've opted to useReducer.
+
+useReducer returns an array with exactly two items:
+
+The current state of this state variable, initially set to the initial state you provided.
+The dispatch function that lets you change it in response to interaction.
+
+For testing decided to use Cypress.
+
 For future improvements, I would do more tests in order to check all possible scenarios and check them properly. 
 At the minute I only have tests for the basic operations on the calculator, would be good to have the more complex ones as well.
 

@@ -153,24 +153,24 @@ function App() {
             <button className="span-two" onClick={() => dispatch({type: ACTIONS.CLEAR})}>
                 AC
             </button>
-            <button onClick={() => dispatch({type: ACTIONS.DELETE_DIGIT})} data-cy="buttonClear">
+            <button onClick={() => dispatch({type: ACTIONS.DELETE_DIGIT})} >
                 DEL
             </button>
-            <OperationButton operation="÷" dispatch={dispatch} data-cy="buttonDivide"/>
+            <OperationButton operation="÷" dispatch={dispatch}/>
             <DigitButton digit="1" dispatch={dispatch}/>
-            <DigitButton digit="2" dispatch={dispatch} data-cy="button2"/>
-            <DigitButton digit="3" dispatch={dispatch} data-cy="button3"/>
-            <OperationButton operation="*" dispatch={dispatch} data-cy="buttonMultiply"/>
-            <DigitButton digit="4" dispatch={dispatch} data-cy="button4"/>
-            <DigitButton digit="5" dispatch={dispatch} id="button5"/>
-            <DigitButton digit="6" dispatch={dispatch} data-cy="button6"/>
-            <OperationButton operation="+" dispatch={dispatch} data-cy="buttonSum"/>
-            <DigitButton digit="7" dispatch={dispatch} data-cy="button7"/>
-            <DigitButton digit="8" dispatch={dispatch} data-cy="button8"/>
-            <DigitButton digit="9" dispatch={dispatch} data-cy="button9"/>
-            <OperationButton operation="-" dispatch={dispatch} data-cy="buttonSubtract"/>
+            <DigitButton digit="2" dispatch={dispatch}/>
+            <DigitButton digit="3" dispatch={dispatch}/>
+            <OperationButton operation="*" dispatch={dispatch}/>
+            <DigitButton digit="4" dispatch={dispatch}/>
+            <DigitButton digit="5" dispatch={dispatch} />
+            <DigitButton digit="6" dispatch={dispatch}/>
+            <OperationButton operation="+" dispatch={dispatch}/>
+            <DigitButton digit="7" dispatch={dispatch} />
+            <DigitButton digit="8" dispatch={dispatch} />
+            <DigitButton digit="9" dispatch={dispatch} />
+            <OperationButton operation="-" dispatch={dispatch}/>
             <DigitButton digit="." dispatch={dispatch}/>
-            <DigitButton digit="0" dispatch={dispatch} data-cy="button0"/>
+            <DigitButton digit="0" dispatch={dispatch}/>
             <button
                 className="span-two"
                 onClick={() => dispatch({type: ACTIONS.EVALUATE})}
